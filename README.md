@@ -16,7 +16,8 @@
   <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="100"/>
 </div>
 
-#### Наша команда:
+<h4 align="center"> :fire: Наша команда: :fire: </h4>
+
 #### :construction_worker: Samorokov Nikolay (nickname на GitHub: QuanRy)
 #### :cop: Grigoriev Ivan (nickname на GitHub: Negibkaya)
 #### :guardsman: Novruzov Sergey (nickname на GitHub: Sergey854223)
