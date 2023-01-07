@@ -16,8 +16,14 @@
   <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="100"/>
 </div>
 
-<h4 align="center"> :fire: Наша команда: :fire: </h4>
+<h3 align="center"> :fire: Наша команда: :fire: </h3>
 
 #### :construction_worker: Samorokov Nikolay (nickname на GitHub: QuanRy)
 #### :cop: Grigoriev Ivan (nickname на GitHub: Negibkaya)
 #### :guardsman: Novruzov Sergey (nickname на GitHub: Sergey854223)
+
+<h3 align="center"> :mag_right: Распределение обязанностей: :mag_right: </h3>
+
+#### :hammer: Samorokov Nikolay (QuanRy) IVT-363 спарсил сайт (https://www.novostivolgograda.ru/). Новости помещаются в базу данных, далее хранятся там (если  новость уже присутствует в БД она не заносится в нее, а игнорируется). 
+#### :wrench: Grigoriev Ivan (Negibkaya) IVT-363 оформил веб-интерфейс, выделил среди всех новостей, хранящихся в БД, с помощью tomita-парсера упоминание значимых персон Волгоградской области и достопримечательностей. Зафиксировал в БД предложения с их упоминанием для дальнейшего анализа тональности.
+#### :nut_and_bolt: Novruzov Sergey (Sergey854223) IVT-363 проанализировал имеющиеся упоминания об известных людях и достопримечательностях в БД и выделил их "тональность". Создал программный модуль для проведения с помощью Spark MlLib анализа модели Word2Vec на всем объеме новостных статей из БД. Для персон Волгоградской области и достопримечательностей определил контекстные синонимы и слова, с которыми они упоминались в тексте.
