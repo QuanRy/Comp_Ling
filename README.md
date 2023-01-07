@@ -1,1 +1,5 @@
-# Comp_Ling dsfsdfd Test
+# Comp_Ling 
+
+
+
+# Это репозиторий для анализа новостного сайта  novostivolgograda (ссылка: https://www.novostivolgograda.ru/), анализа новостных статей, выявление упоминаний об известных людях и местах города Волгограда.
