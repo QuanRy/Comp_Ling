@@ -1,0 +1,38 @@
+body {
+    background-color: bisque;
+}
+
+.main {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-flex {
+    display: flex;
+}
+
+.div-syn {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.div-syn div {
+    width: 100%;
+    text-align: center;
+    background-color: cornsilk;
+    padding: 0.8rem 1rem;
+}
+
+.date-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}

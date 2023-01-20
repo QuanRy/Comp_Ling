@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Posts
+{% endblock title %}
+
+
+{% block body %}
+<div class="container mt-5">
+    <h1>All posts</h1>
+
+    {% if posts|length > 0 %}
+        {% for el in posts %}
+            <div class="card" style="width: 80rem;">
+                <div class="card-body">
+                    <h5 class="card-title">{{ el[1]}}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ el[2] }}</h6>
+                    <p class="card-text">{{ el[4] }}</p>
+                    <a href="{{ el[3] }}" class="card-link">{{ el[3] }}</a>
+                    <a href="/posts/{{ el[0] }}" class="card-link" style="">Tomita/Tonality</a>
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p class="mb-0">Posts not found</p>
+    {% endif %}
+
+</div>
+
+{% endblock body %}

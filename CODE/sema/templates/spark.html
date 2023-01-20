@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Spark page
+{% endblock title %}
+
+
+{% block body %}
+<div class="container mt-5" style="width: 600px">
+    <form class="form-inline form-flex" method="post">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="word" id="word">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+    <div class="div-syn">
+        {% for el in words %}
+            <div>{{ el }}</div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock body %}

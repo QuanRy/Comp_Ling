@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Post detail
+{% endblock title %}
+
+
+{% block body %}
+<div class="alert alert-success" role="alert">
+    <h4 class="alert-heading">Well done!</h4>
+    <p>{{ post }}</p>
+    <hr>
+    {% if props|length > 0 %}
+        {% for el in props %}
+            <p class="mb-0">Fact = {{ el[1] }}</p>
+            <p class="mb-0">Tonality = {{ el[3] }}</p>
+            <p class="mb-0">Text = {{ el[2] }}</p>
+            <hr>
+        {% endfor %}
+    {% else %}
+        <p class="mb-0">Facts not found</p>
+    {% endif %}
+</div>
+{% endblock body %}

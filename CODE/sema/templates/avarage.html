@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Avarage facts
+{% endblock title %}
+
+
+{% block body %}
+<h1 style="text-align: center; margin-top: 5rem;">Search</h1>
+<form method="post" class="date-table">
+    <label for="ot">ot:</label>
+    <input type="date" id="ot" name="ot">    
+    <label for="do">do:</label>
+    <input type="date" id="do" name="do">
+    <input type="submit">
+</form>
+<div class="container mt-5" style="background-color: white;">
+
+    <table class="table">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Facts</th>
+            <th scope="col">Positive</th>
+            <th scope="col">Negative</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% if allFacts|length > 0 %}
+                {% for el in allFacts %}
+                <tr>
+                    <th scope="row">|</th>
+                    <td>{{ el[0] }}</td>
+                    <td>{{ el[1] }}</td>
+                    <td>{{ el[2] }}</td>
+                </tr>
+                {% endfor %}
+            {% else %}
+                <p class="mb-0">Facts not found</p>
+            {% endif %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock body %}
